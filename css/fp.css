@@ -1,0 +1,228 @@
+/* My WEB120 Portal Website Styles */
+
+html {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color:#BADFB1;
+    margin-top: 0;
+}
+
+html, body {
+/*    height: 110%;*/
+    margin: 0;
+}
+
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+    width: 100%;
+}
+
+div.a {
+    text-align: center;
+}
+
+.top {
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Lobster', cursive;
+}
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lobster', cursive;;
+    
+}
+
+img {
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 5px;
+}
+
+.logo {
+    color:#31BADF;
+    margin-left:1%;
+    text-shadow:1px 1px #BADFB1;
+    font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+	clear:both;
+    background-color: #BADFB1;
+}
+
+footer p {
+    margin: 0;
+}
+
+#copyright {
+    clear: both;
+    height: 50px;
+    line-height: 50px;
+    background: #ccc;
+    margin-top: 10px;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   div.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:65%;
+		float:left;
+	}
+	
+     aside {	
+		width:30%;
+		float:right;
+	}
+			
+	
+    img.desktop {
+        float:left;
+       	width:100%;
+        padding-right: 2%;
+   	 }
+    
+    img.tablet, img.phone {
+       	display:none;
+    	}  
+    
+        .small-form {
+    display: none;
+    }
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #BADFB1;
+        color:#000;
+   	 }
+    
+
+    
+
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+    
+
+	
+	section {
+		width:56%;
+		float:left;
+        padding-left:2%;
+	}
+	
+	aside {	
+		width:39%;
+		float:right;
+	}
+	
+    img.tablet {
+    width:100%;
+    }
+    
+    img.phone, img.desktop {
+    display:none;
+    }
+    
+            .small-form {
+    display: none;
+    }
+
+    
+    /* Change background color of navigation on selected page */
+        ul.topnav li a.selected {
+        background-color: #BADFB1;
+        color:#000;
+        }
+  }
+
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    section, aside {
+        padding:.5em;
+    }
+    
+    img.phone {
+       	width:100%;
+    }
+    
+    img.tablet, img.desktop {
+        display:none;
+    } 
+    
+        
+    .large-form {
+    display: none;
+    }
+    
+    .container {
+    width: 90%;
+}
+    
+}
+
+@media all and (max-width:584px) {
+    
+    #copyright {
+    clear: both;
+    height: 100px;
+    line-height: 50px;
+    background: #ccc;
+    }
+
+}
